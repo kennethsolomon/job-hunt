@@ -5,6 +5,10 @@ namespace App\Filament\Resources\Applications;
 use App\Filament\Resources\Applications\Pages\CreateApplication;
 use App\Filament\Resources\Applications\Pages\EditApplication;
 use App\Filament\Resources\Applications\Pages\ListApplications;
+use App\Filament\Resources\Applications\RelationManagers\ActivitiesRelationManager;
+use App\Filament\Resources\Applications\RelationManagers\CompanyRelationManager;
+use App\Filament\Resources\Applications\RelationManagers\InterviewsRelationManager;
+use App\Filament\Resources\Applications\RelationManagers\TasksRelationManager;
 use App\Filament\Resources\Applications\Schemas\ApplicationForm;
 use App\Filament\Resources\Applications\Tables\ApplicationsTable;
 use App\Models\Application;
@@ -18,7 +22,7 @@ class ApplicationResource extends Resource
 {
     protected static ?string $model = Application::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedBriefcase;
 
     protected static ?string $recordTitleAttribute = 'Application';
 
@@ -35,7 +39,10 @@ class ApplicationResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            CompanyRelationManager::class,
+            ActivitiesRelationManager::class,
+            InterviewsRelationManager::class,
+            TasksRelationManager::class,
         ];
     }
 

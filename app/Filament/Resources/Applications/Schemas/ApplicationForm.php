@@ -22,6 +22,12 @@ class ApplicationForm
                 Hidden::make('user_id')
                     ->default(fn () => auth()->id())
                     ->required(),
+                Select::make('company_id')
+                    ->relationship('company', 'name')
+                    ->searchable()
+                    ->preload()
+                    ->required()
+                    ->label('Company'),
                 TextInput::make('role')->required()->maxLength(150),
                 TextInput::make('source_url')->url()->label('Job URL')->nullable(),
                 Select::make('status')->options([

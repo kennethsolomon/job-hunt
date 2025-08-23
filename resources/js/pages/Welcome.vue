@@ -1,5 +1,4 @@
 <script setup>
-import { Head, Link } from '@inertiajs/vue3'
 
 const year = new Date().getFullYear()
 
@@ -21,6 +20,9 @@ const year = new Date().getFullYear()
   </Head>
 
   <div class="bg-white text-gray-900">
+    <div class="w-full bg-yellow-100 border-b border-yellow-300 text-yellow-900 text-center py-3 px-4 text-sm font-medium">
+      🚧 <span class="font-semibold">Job Hunt CRM is under development</span> — Launching later this year! Stay tuned for updates.
+    </div>
     <!-- Header -->
     <header class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
@@ -58,9 +60,9 @@ const year = new Date().getFullYear()
         </div>
         <div class="mt-6 flex items-center gap-4 text-sm text-gray-600">
           <div class="flex -space-x-2">
-            <img src="/images/avatars/a1.png" class="inline-block w-8 h-8 rounded-full ring-2 ring-white" alt="User avatar 1" />
-            <img src="/images/avatars/a2.png" class="inline-block w-8 h-8 rounded-full ring-2 ring-white" alt="User avatar 2" />
-            <img src="/images/avatars/a3.png" class="inline-block w-8 h-8 rounded-full ring-2 ring-white" alt="User avatar 3" />
+            <img src="https://placehold.co/40x40?text=Coming Soon" class="inline-block w-8 h-8 rounded-full ring-2 ring-white" alt="User avatar 1" />
+            <img src="https://placehold.co/40x40?text=Coming Soon" class="inline-block w-8 h-8 rounded-full ring-2 ring-white" alt="User avatar 2" />
+            <img src="https://placehold.co/40x40?text=Coming Soon" class="inline-block w-8 h-8 rounded-full ring-2 ring-white" alt="User avatar 3" />
           </div>
           <span>Trusted by focused job seekers worldwide</span>
         </div>
@@ -69,7 +71,7 @@ const year = new Date().getFullYear()
       <div class="relative">
         <div class="absolute -inset-4 bg-gradient-to-tr from-indigo-100 to-white rounded-3xl blur"></div>
         <div class="relative bg-white border rounded-3xl p-4 shadow-xl">
-          <img src="/images/screens/dashboard-preview.png" alt="Dashboard preview" class="rounded-2xl border" />
+          <img src="https://placehold.co/600x400?text=Coming Soon" alt="Dashboard preview" class="rounded-2xl border" />
           <p class="text-xs text-gray-500 mt-3">Preview of the daily dashboard with KPIs and follow‑ups.</p>
         </div>
       </div>
@@ -102,7 +104,7 @@ const year = new Date().getFullYear()
           <p class="mt-2 text-sm text-gray-600">
             Kanban‑style stages: Prospect → Applied → Replied → Interview → Offer → Accepted/Rejected.
           </p>
-          <img src="/images/screens/kanban.png" alt="Pipeline screenshot" class="mt-4 rounded-xl border" />
+          <img src="https://placehold.co/600x400?text=Coming Soon" alt="Pipeline screenshot" class="mt-4 rounded-xl border" />
         </div>
         <div class="p-6 bg-white rounded-2xl border">
           <div class="text-indigo-600 font-semibold">Follow‑ups</div>
@@ -110,7 +112,7 @@ const year = new Date().getFullYear()
           <p class="mt-2 text-sm text-gray-600">
             Auto‑create follow‑up tasks after X days with friendly reminders. Reschedule in one click.
           </p>
-          <img src="/images/screens/followups.png" alt="Follow‑ups screenshot" class="mt-4 rounded-xl border" />
+          <img src="https://placehold.co/600x400?text=Coming Soon" alt="Follow‑ups screenshot" class="mt-4 rounded-xl border" />
         </div>
         <div class="p-6 bg-white rounded-2xl border">
           <div class="text-indigo-600 font-semibold">Notes & emails</div>
@@ -118,7 +120,7 @@ const year = new Date().getFullYear()
           <p class="mt-2 text-sm text-gray-600">
             Log emails, calls, and notes right on the application. See the full timeline at a glance.
           </p>
-          <img src="/images/screens/timeline.png" alt="Timeline screenshot" class="mt-4 rounded-xl border" />
+          <img src="https://placehold.co/600x400?text=Coming Soon" alt="Timeline screenshot" class="mt-4 rounded-xl border" />
         </div>
       </div>
     </section>
@@ -142,7 +144,7 @@ const year = new Date().getFullYear()
           </div>
         </div>
         <div class="bg-white border rounded-2xl p-4 shadow-sm">
-          <img src="/images/screens/metrics.png" alt="Metrics screenshot" class="rounded-xl border" />
+          <img src="https://placehold.co/600x400?text=Coming Soon" alt="Metrics screenshot" class="rounded-xl border" />
         </div>
       </div>
     </section>
@@ -218,14 +220,14 @@ const year = new Date().getFullYear()
           <span class="absolute right-4 top-4 text-xs bg-indigo-600 text-white px-2 py-1 rounded-full">Most popular</span>
           <h3 class="font-semibold">Pro</h3>
           <p class="mt-2 text-sm text-gray-600">Unlimited apps, follow‑up engine, calendar</p>
-          <div class="mt-4 text-3xl font-extrabold">₱249<span class="text-base font-normal">/mo</span></div>
+          <div class="mt-4 text-2xl font-extrabold">Contact for pricing</div>
           <ul class="mt-4 space-y-2 text-sm text-gray-700">
             <li>• Everything in Free</li>
             <li>• Automatic follow‑ups</li>
             <li>• Calendar & interview kit</li>
             <li>• Priority support</li>
           </ul>
-          <Link href="/admin" class="mt-6 inline-block px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold focus-ring">Go Pro</Link>
+          <a href="mailto:your-email@example.com?subject=Pro Plan Inquiry" class="mt-6 inline-block px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold focus-ring">Contact Me</a>
         </div>
       </div>
       <p class="mt-3 text-xs text-gray-500">*Impact estimates based on early user cohort; your mileage may vary.</p>
@@ -280,9 +282,9 @@ const year = new Date().getFullYear()
           <span>© {{ year }} Job Hunt CRM</span>
         </div>
         <nav class="flex gap-6">
-          <a href="/privacy" class="hover:underline">Privacy</a>
-          <a href="/terms" class="hover:underline">Terms</a>
-          <a href="mailto:support@example.com" class="hover:underline">Contact</a>
+          <a href="#" class="hover:underline">Privacy</a>
+          <a href="#" class="hover:underline">Terms</a>
+          <a href="mailto:hello@kennethsolomon.com" class="hover:underline">Contact</a>
         </nav>
       </div>
     </footer>
