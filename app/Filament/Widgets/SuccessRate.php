@@ -8,6 +8,7 @@ use Filament\Widgets\StatsOverviewWidget\Stat;
 
 class SuccessRate extends StatsOverviewWidget
 {
+    protected static ?int $sort = 2;
     protected function getCards(): array
     {
         $from = now()->subDays(30);

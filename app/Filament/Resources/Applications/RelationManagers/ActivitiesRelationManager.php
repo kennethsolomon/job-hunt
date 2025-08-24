@@ -13,6 +13,7 @@ use Filament\Actions\EditAction;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\TextInput;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Schema;
@@ -28,6 +29,9 @@ class ActivitiesRelationManager extends RelationManager
     {
         return $schema
             ->components([
+                Hidden::make('user_id')
+                ->default(fn () => auth()->user()?->id)
+                ->required(),
                 Select::make('type')->options([
                     'note'=>'Note','email'=>'Email','call'=>'Call','followup'=>'Follow-up','status_change'=>'Status Change',
                 ])->required(),

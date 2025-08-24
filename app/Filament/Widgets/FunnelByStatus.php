@@ -7,7 +7,7 @@ use Filament\Widgets\ChartWidget;
 
 class FunnelByStatus extends ChartWidget
 {
-    protected static ?int $sort = 2;
+    protected static ?int $sort = 5;
     protected ?string $heading = 'Pipeline by Status';
 
     public function getDescription(): ?string

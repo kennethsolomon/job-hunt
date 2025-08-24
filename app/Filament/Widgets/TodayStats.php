@@ -8,7 +8,7 @@ use App\Models\{Application, Activity, Interview, Task};
 
 class TodayStats extends StatsOverviewWidget
 {
-    protected static ?int $sort = 1;
+    protected static ?int $sort = 3;
 
 
     protected function getStats(): array
